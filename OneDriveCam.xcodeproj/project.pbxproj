@@ -3,10 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F881E8A23F03C86005441B7 /* tabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F881E8923F03C86005441B7 /* tabBar.swift */; };
+		0F881E8C23F0456E005441B7 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F881E8B23F0456E005441B7 /* ViewRouter.swift */; };
+		0F881E8E23F09A21005441B7 /* AuthSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F881E8D23F09A21005441B7 /* AuthSettings.plist */; };
+		0FCA93682403769C00F91D05 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA93672403769C00F91D05 /* SignInView.swift */; };
+		0FCA936A24037D9100F91D05 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA936924037D9100F91D05 /* SignInViewController.swift */; };
+		0FCA936C24037DC800F91D05 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA936B24037DC800F91D05 /* AuthenticationManager.swift */; };
+		0FCA94172407751C00F91D05 /* SpinnerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA94162407751B00F91D05 /* SpinnerUI.swift */; };
 		0FE513BC23EFC37100AE38E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE513BB23EFC37100AE38E7 /* AppDelegate.swift */; };
 		0FE513BE23EFC37100AE38E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE513BD23EFC37100AE38E7 /* SceneDelegate.swift */; };
 		0FE513C123EFC37100AE38E7 /* OneDriveCam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FE513BF23EFC37100AE38E7 /* OneDriveCam.xcdatamodeld */; };
@@ -14,9 +21,18 @@
 		0FE513C523EFC37500AE38E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FE513C423EFC37500AE38E7 /* Assets.xcassets */; };
 		0FE513C823EFC37500AE38E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FE513C723EFC37500AE38E7 /* Preview Assets.xcassets */; };
 		0FE513CB23EFC37500AE38E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE513C923EFC37500AE38E7 /* LaunchScreen.storyboard */; };
+		8BAF0511EDE44D07C37B6FC1 /* Pods_OneDriveCam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9765B2B93EC7A406B9E9552D /* Pods_OneDriveCam.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F881E8923F03C86005441B7 /* tabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBar.swift; sourceTree = "<group>"; };
+		0F881E8B23F0456E005441B7 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		0F881E8D23F09A21005441B7 /* AuthSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AuthSettings.plist; sourceTree = "<group>"; };
+		0F881E8F23F0DBEF005441B7 /* OneDriveCam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneDriveCam.entitlements; sourceTree = "<group>"; };
+		0FCA93672403769C00F91D05 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		0FCA936924037D9100F91D05 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		0FCA936B24037DC800F91D05 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		0FCA94162407751B00F91D05 /* SpinnerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerUI.swift; sourceTree = "<group>"; };
 		0FE513B823EFC37100AE38E7 /* OneDriveCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneDriveCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE513BB23EFC37100AE38E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FE513BD23EFC37100AE38E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +42,9 @@
 		0FE513C723EFC37500AE38E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0FE513CA23EFC37500AE38E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FE513CC23EFC37500AE38E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		693B146E70BCA536C6B8BA26 /* Pods-OneDriveCam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneDriveCam.release.xcconfig"; path = "Target Support Files/Pods-OneDriveCam/Pods-OneDriveCam.release.xcconfig"; sourceTree = "<group>"; };
+		9765B2B93EC7A406B9E9552D /* Pods_OneDriveCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneDriveCam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7912048745E27AF8C2912BF /* Pods-OneDriveCam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneDriveCam.debug.xcconfig"; path = "Target Support Files/Pods-OneDriveCam/Pods-OneDriveCam.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BAF0511EDE44D07C37B6FC1 /* Pods_OneDriveCam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +64,8 @@
 			children = (
 				0FE513BA23EFC37100AE38E7 /* OneDriveCam */,
 				0FE513B923EFC37100AE38E7 /* Products */,
+				A31CE117BEB600FB9E687AFA /* Pods */,
+				B3953FFF5DF05062BFCD1B69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,12 +80,20 @@
 		0FE513BA23EFC37100AE38E7 /* OneDriveCam */ = {
 			isa = PBXGroup;
 			children = (
+				0F881E8F23F0DBEF005441B7 /* OneDriveCam.entitlements */,
+				0FCA94162407751B00F91D05 /* SpinnerUI.swift */,
+				0FCA936924037D9100F91D05 /* SignInViewController.swift */,
+				0FCA936B24037DC800F91D05 /* AuthenticationManager.swift */,
 				0FE513BB23EFC37100AE38E7 /* AppDelegate.swift */,
 				0FE513BD23EFC37100AE38E7 /* SceneDelegate.swift */,
 				0FE513C223EFC37100AE38E7 /* ContentView.swift */,
 				0FE513C423EFC37500AE38E7 /* Assets.xcassets */,
+				0F881E8923F03C86005441B7 /* tabBar.swift */,
+				0FCA93672403769C00F91D05 /* SignInView.swift */,
+				0F881E8B23F0456E005441B7 /* ViewRouter.swift */,
 				0FE513C923EFC37500AE38E7 /* LaunchScreen.storyboard */,
 				0FE513CC23EFC37500AE38E7 /* Info.plist */,
+				0F881E8D23F09A21005441B7 /* AuthSettings.plist */,
 				0FE513BF23EFC37100AE38E7 /* OneDriveCam.xcdatamodeld */,
 				0FE513C623EFC37500AE38E7 /* Preview Content */,
 			);
@@ -78,6 +108,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A31CE117BEB600FB9E687AFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7912048745E27AF8C2912BF /* Pods-OneDriveCam.debug.xcconfig */,
+				693B146E70BCA536C6B8BA26 /* Pods-OneDriveCam.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B3953FFF5DF05062BFCD1B69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9765B2B93EC7A406B9E9552D /* Pods_OneDriveCam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,15 +132,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FE513CF23EFC37500AE38E7 /* Build configuration list for PBXNativeTarget "OneDriveCam" */;
 			buildPhases = (
+				94E53191200DD1839D5DF9CE /* [CP] Check Pods Manifest.lock */,
 				0FE513B423EFC37100AE38E7 /* Sources */,
 				0FE513B523EFC37100AE38E7 /* Frameworks */,
 				0FE513B623EFC37100AE38E7 /* Resources */,
+				9276768871D50984A350859C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = OneDriveCam;
+			packageProductDependencies = (
+			);
 			productName = OneDriveCam;
 			productReference = 0FE513B823EFC37100AE38E7 /* OneDriveCam.app */;
 			productType = "com.apple.product-type.application";
@@ -137,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FE513CB23EFC37500AE38E7 /* LaunchScreen.storyboard in Resources */,
+				0F881E8E23F09A21005441B7 /* AuthSettings.plist in Resources */,
 				0FE513C823EFC37500AE38E7 /* Preview Assets.xcassets in Resources */,
 				0FE513C523EFC37500AE38E7 /* Assets.xcassets in Resources */,
 			);
@@ -144,15 +196,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9276768871D50984A350859C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneDriveCam/Pods-OneDriveCam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneDriveCam/Pods-OneDriveCam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OneDriveCam/Pods-OneDriveCam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94E53191200DD1839D5DF9CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneDriveCam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0FE513B423EFC37100AE38E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0FE513BC23EFC37100AE38E7 /* AppDelegate.swift in Sources */,
+				0FCA94172407751C00F91D05 /* SpinnerUI.swift in Sources */,
+				0FCA93682403769C00F91D05 /* SignInView.swift in Sources */,
 				0FE513C123EFC37100AE38E7 /* OneDriveCam.xcdatamodeld in Sources */,
+				0FCA936C24037DC800F91D05 /* AuthenticationManager.swift in Sources */,
 				0FE513C323EFC37100AE38E7 /* ContentView.swift in Sources */,
+				0FCA936A24037D9100F91D05 /* SignInViewController.swift in Sources */,
+				0F881E8C23F0456E005441B7 /* ViewRouter.swift in Sources */,
 				0FE513BE23EFC37100AE38E7 /* SceneDelegate.swift in Sources */,
+				0F881E8A23F03C86005441B7 /* tabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,13 +386,16 @@
 		};
 		0FE513D023EFC37500AE38E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7912048745E27AF8C2912BF /* Pods-OneDriveCam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OneDriveCam/OneDriveCam.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"OneDriveCam/Preview Content\"";
 				DEVELOPMENT_TEAM = 73X37M5BQV;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = OneDriveCam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,13 +409,16 @@
 		};
 		0FE513D123EFC37500AE38E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 693B146E70BCA536C6B8BA26 /* Pods-OneDriveCam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OneDriveCam/OneDriveCam.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"OneDriveCam/Preview Content\"";
 				DEVELOPMENT_TEAM = 73X37M5BQV;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = OneDriveCam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
