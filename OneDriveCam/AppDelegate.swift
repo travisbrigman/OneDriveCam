@@ -13,6 +13,8 @@ import MSAL
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
+    //var window: UIWindow?
+    
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
 
         guard let sourceApplication = options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String else {
