@@ -10,18 +10,20 @@ import UIKit
 
 class SignInViewController: UIViewController {
 
+    private let spinner = SpinnerViewController()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
         // See if a user is already signed in
-        //spinner.start(container: self)
+        spinner.start(container: self)
 
         AuthenticationManager.instance.getTokenSilently {
             (token: String?, error: Error?) in
 
             DispatchQueue.main.async {
-                //self.spinner.stop()
+                self.spinner.stop()
 
                 guard let _ = token, error == nil else {
                     // If there is no token or if there's an error,
@@ -37,15 +39,14 @@ class SignInViewController: UIViewController {
     }
 
     @IBAction func signIn() {
-        //spinner.start(container: self)
-        
+        spinner.start(container: self)
 
         // Do an interactive sign in
         AuthenticationManager.instance.getTokenInteractively(parentView: self) {
             (token: String?, error: Error?) in
 
             DispatchQueue.main.async {
-                //self.spinner.stop()
+                self.spinner.stop()
 
                 guard let _ = token, error == nil else {
                     // Show the error and stay on the sign-in page

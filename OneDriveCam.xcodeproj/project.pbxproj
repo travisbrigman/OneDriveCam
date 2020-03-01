@@ -10,7 +10,6 @@
 		0F881E8A23F03C86005441B7 /* tabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F881E8923F03C86005441B7 /* tabBar.swift */; };
 		0F881E8C23F0456E005441B7 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F881E8B23F0456E005441B7 /* ViewRouter.swift */; };
 		0F881E8E23F09A21005441B7 /* AuthSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F881E8D23F09A21005441B7 /* AuthSettings.plist */; };
-		0FCA93682403769C00F91D05 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA93672403769C00F91D05 /* SignInView.swift */; };
 		0FCA936A24037D9100F91D05 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA936924037D9100F91D05 /* SignInViewController.swift */; };
 		0FCA936C24037DC800F91D05 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA936B24037DC800F91D05 /* AuthenticationManager.swift */; };
 		0FCA94172407751C00F91D05 /* SpinnerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA94162407751B00F91D05 /* SpinnerUI.swift */; };
@@ -18,6 +17,7 @@
 		0FCA941B2408BD2F00F91D05 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA941A2408BD2F00F91D05 /* WelcomeViewController.swift */; };
 		0FCA941D240AF1DE00F91D05 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA941C240AF1DE00F91D05 /* CalendarViewController.swift */; };
 		0FCA941F240AF4F000F91D05 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA941E240AF4F000F91D05 /* SpinnerViewController.swift */; };
+		0FCA9423240B72FD00F91D05 /* GraphManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA9422240B72FD00F91D05 /* GraphManager.swift */; };
 		0FE513BC23EFC37100AE38E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE513BB23EFC37100AE38E7 /* AppDelegate.swift */; };
 		0FE513BE23EFC37100AE38E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE513BD23EFC37100AE38E7 /* SceneDelegate.swift */; };
 		0FE513C123EFC37100AE38E7 /* OneDriveCam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FE513BF23EFC37100AE38E7 /* OneDriveCam.xcdatamodeld */; };
@@ -33,7 +33,6 @@
 		0F881E8B23F0456E005441B7 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		0F881E8D23F09A21005441B7 /* AuthSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AuthSettings.plist; sourceTree = "<group>"; };
 		0F881E8F23F0DBEF005441B7 /* OneDriveCam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneDriveCam.entitlements; sourceTree = "<group>"; };
-		0FCA93672403769C00F91D05 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		0FCA936924037D9100F91D05 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		0FCA936B24037DC800F91D05 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		0FCA94162407751B00F91D05 /* SpinnerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerUI.swift; sourceTree = "<group>"; };
@@ -41,6 +40,7 @@
 		0FCA941A2408BD2F00F91D05 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		0FCA941C240AF1DE00F91D05 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		0FCA941E240AF4F000F91D05 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		0FCA9422240B72FD00F91D05 /* GraphManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphManager.swift; sourceTree = "<group>"; };
 		0FE513B823EFC37100AE38E7 /* OneDriveCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneDriveCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE513BB23EFC37100AE38E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FE513BD23EFC37100AE38E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,9 +97,9 @@
 				0FE513C223EFC37100AE38E7 /* ContentView.swift */,
 				0FE513C423EFC37500AE38E7 /* Assets.xcassets */,
 				0F881E8923F03C86005441B7 /* tabBar.swift */,
-				0FCA93672403769C00F91D05 /* SignInView.swift */,
 				0F881E8B23F0456E005441B7 /* ViewRouter.swift */,
 				0FCA941A2408BD2F00F91D05 /* WelcomeViewController.swift */,
+				0FCA9422240B72FD00F91D05 /* GraphManager.swift */,
 				0FE513C923EFC37500AE38E7 /* LaunchScreen.storyboard */,
 				0FCA94182408B77700F91D05 /* Main.storyboard */,
 				0FCA941E240AF4F000F91D05 /* SpinnerViewController.swift */,
@@ -257,11 +257,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FCA941D240AF1DE00F91D05 /* CalendarViewController.swift in Sources */,
+				0FCA9423240B72FD00F91D05 /* GraphManager.swift in Sources */,
 				0FE513BC23EFC37100AE38E7 /* AppDelegate.swift in Sources */,
 				0FCA94172407751C00F91D05 /* SpinnerUI.swift in Sources */,
 				0FCA941F240AF4F000F91D05 /* SpinnerViewController.swift in Sources */,
 				0FCA941B2408BD2F00F91D05 /* WelcomeViewController.swift in Sources */,
-				0FCA93682403769C00F91D05 /* SignInView.swift in Sources */,
 				0FE513C123EFC37100AE38E7 /* OneDriveCam.xcdatamodeld in Sources */,
 				0FCA936C24037DC800F91D05 /* AuthenticationManager.swift in Sources */,
 				0FE513C323EFC37100AE38E7 /* ContentView.swift in Sources */,
